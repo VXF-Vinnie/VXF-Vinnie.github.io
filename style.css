@@ -46,6 +46,77 @@ header p{
     margin-top:10px;
 
 }
+/* ---------- ABOUT ME ---------- */
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.about-photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
+    border: 3px solid #d73a49;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+.about-title {
+  color: #d73a49;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.about-subtitle {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.about-text {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .about-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-section {
+    padding: 5rem 0;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+  }
+}
 
 
 /* ---------- Navigation ---------- */

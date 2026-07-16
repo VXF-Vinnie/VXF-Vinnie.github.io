@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Vincent Farfan | Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
+<link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>Vincent Farfan</h1>
-        <p>Computer Science Student | Aspiring Software Engineer</p>
+        <p>Computer Science Student | Software Engineer | Project Management</p>
 
         <nav>
             <a href="#about">About</a>
@@ -22,36 +28,59 @@
     </header>
 
     <main>
-       <section id="about">
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-      <div>
-        <div class="max-w-prose md:max-w-none">
-          <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
-           ABOUT ME
-          </h2>
+       <section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <img
+          src="images/vincentpfp.PNG"
+          alt="Portrait of Vincent Farfan"
+          class="about-photo rounded-circle border border-danger border-2 flex-shrink-0"
+        />
 
-          <p class="mt-4 text-pretty text-gray-700">
-           My name is Vincent Farfan, and I am a Computer Science student at Arizona State University with a passion for software development and automation. 
-              I'm fascinated by using technology to simplify everyday tasks and create solutions that make people's lives easier. My current focus is expanding my technical 
-              skillset by learning new technologies, building personal projects, and continuously challenging myself to grow as a developer. I believe one of my greatest strengths is
-              my commitment to self-improvement—whether that's learning a new programming language, tackling complex coding problems, or finding better ways to solve everyday challenges.
-              I'm currently seeking software engineering internship opportunities where I can apply my skills, 
-              continue learning from experienced engineers, and contribute to meaningful projects while growing as both a developer and a teammate.
+        <div>
+          <h2 class="about-title mb-1">ABOUT ME</h2>
+
+          <p class="about-subtitle mb-0">
+            Computer Science Student • Arizona State University
           </p>
         </div>
       </div>
 
-      <div>
-        <img
-          src="images/vincentpfp.PNG"
-          class="rounded"
-          alt="Photo of Vincent Farfan"
-        />
+      <div class="about-text">
+        <p>
+          My name is Vincent Farfan, and I am a Computer Science student at
+          Arizona State University with a strong interest in software
+          development and automation.
+        </p>
+
+        <p>
+          I enjoy using technology to simplify everyday tasks and create
+          practical solutions that make people's lives easier. I am currently
+          expanding my technical skill set by learning new technologies,
+          building personal projects, and challenging myself to become a
+          stronger developer.
+        </p>
+
+        <p>
+          One of my greatest strengths is my commitment to continuous
+          self-improvement. Whether I am learning a new programming language,
+          working through a difficult coding problem, or finding a better way
+          to approach a challenge, I am always looking for opportunities to
+          grow.
+        </p>
+
+        <p class="mb-0">
+          I am currently seeking software engineering internship opportunities
+          where I can apply my skills, learn from experienced professionals,
+          and contribute to meaningful projects while growing as both a
+          developer and a teammate.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
 
         <section id="projects">
             <h2>Featured Projects</h2>
