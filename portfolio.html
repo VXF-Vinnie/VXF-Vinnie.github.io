@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+        name="description"
+        content="Explore software and computer science projects created by Vincent Farfan."
+    />
+
+    <title>Portfolio | Vincent Farfan</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Vincent Farfan
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Open navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavigation"
+            >
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="portfolio.html"
+                        >
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">
+                            Resume
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link contact-nav-link"
+                            href="contact.html"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+
+                <p class="eyebrow">Portfolio</p>
+
+                <h1>Projects and technical work.</h1>
+
+                <p>
+                    A collection of projects demonstrating my experience with
+                    programming, software development, problem-solving, and
+                    technical communication.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container">
+
+                <div class="portfolio-grid">
+
+                    <!-- Compiler Project -->
+                    <article class="project-card">
+
+                        <div class="project-card-header">
+
+                            <span class="project-number">01</span>
+
+                            <i class="bi bi-cpu project-icon"></i>
+
+                        </div>
+
+                        <h2>Compiler &amp; Semantic Analyzer</h2>
+
+                        <p class="project-tech">
+                            C++ • Compiler Design • Recursive Descent Parsing
+                        </p>
+
+                        <p>
+                            Implemented the semantic-analysis component of a
+                            compiler for a custom programming language using
+                            C++.
+                        </p>
+
+                        <p>
+                            Built symbol-table management, static scope
+                            resolution, type checking, variable tracking, and
+                            compile-time diagnostics.
+                        </p>
+
+                        <div class="tag-list">
+
+                            <span>C++</span>
+                            <span>Parsing</span>
+                            <span>Symbol Tables</span>
+                            <span>Type Systems</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://github.com/VXF-Vinnie/compiler-semantic-analyzer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="site-button primary-button"
+                            >
+                                <i class="bi bi-github"></i>
+                                View Repository
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; <span class="current-year"></span> Vincent Farfan
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/VXF-Vinnie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vincent Farfan on GitHub"
+                >
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/vincent-farfan-723b922ba"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Vincent Farfan on LinkedIn"
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
