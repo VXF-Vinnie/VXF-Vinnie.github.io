@@ -3,166 +3,244 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Software projects by Vincent Farfan, including a Honeywell-sponsored capstone, an iOS bill-splitting app, a local-AI privacy tool, and a C++ compiler semantic analyzer." />
+    <meta name="author" content="Vincent Farfan" />
+    <meta name="theme-color" content="#0d1117" />
 
-    <meta
-        name="description"
-        content="Explore software and computer science projects created by Vincent Farfan."
-    />
+    <title>Projects | Vincent Farfan</title>
 
-    <title>Portfolio | Vincent Farfan</title>
+    <!-- Social link previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Vincent Farfan" />
+    <meta property="og:description" content="Software projects by Vincent Farfan, including a Honeywell-sponsored capstone, an iOS bill-splitting app, a local-AI privacy tool, and a C++ compiler semantic analyzer." />
+    <meta property="og:url" content="https://vxf-vinnie.github.io/portfolio.html" />
+    <meta property="og:image" content="https://vxf-vinnie.github.io/images/vincentpfp.PNG" />
+    <link rel="canonical" href="https://vxf-vinnie.github.io/portfolio.html" />
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-        rel="stylesheet"
-    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
+    <!-- Bootstrap + icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">VF</span>
                 Vincent Farfan
             </a>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavigation"
-                aria-controls="mainNavigation"
-                aria-expanded="false"
-                aria-label="Open navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation" aria-expanded="false" aria-label="Open navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div
-                class="collapse navbar-collapse"
-                id="mainNavigation"
-            >
+            <div class="collapse navbar-collapse" id="mainNavigation">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            About
-                        </a>
+                        <a class="nav-link" href="index.html">About</a>
                     </li>
-
                     <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="portfolio.html"
-                        >
-                            Portfolio
-                        </a>
+                        <a class="nav-link active" aria-current="page" href="portfolio.html">Projects</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="resume.html">
-                            Resume
-                        </a>
+                        <a class="nav-link" href="resume.html">Resume</a>
                     </li>
-
                     <li class="nav-item">
-                        <a
-                            class="nav-link contact-nav-link"
-                            href="contact.html"
-                        >
-                            Contact
-                        </a>
+                        <a class="nav-link contact-nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
 
         </div>
     </nav>
 
-    <main>
+    <main id="main">
 
         <section class="page-hero">
             <div class="container">
-
-                <p class="eyebrow">Portfolio</p>
-
+                <p class="eyebrow">Projects</p>
                 <h1>Projects and technical work.</h1>
-
-                <p>
-                    A collection of projects demonstrating my experience with
-                    programming, software development, problem-solving, and
-                    technical communication.
+                <p class="page-hero-lead">
+                    Projects that show my experience with programming, software design,
+                    databases, testing, mobile development, local AI, and working on a team.
                 </p>
-
             </div>
         </section>
 
         <section class="page-section">
             <div class="container">
 
-                <div class="portfolio-grid">
+                <div class="project-grid">
 
-                    <!-- Compiler Project -->
-                    <article class="project-card">
-
+                    <!-- Capstone -->
+                    <article class="project-card featured card-surface card-hover reveal">
                         <div class="project-card-header">
-
-                            <span class="project-number">01</span>
-
-                            <i class="bi bi-cpu project-icon"></i>
-
+                            <div class="project-icon"><i class="bi bi-diagram-3"></i></div>
+                            <span class="project-date">Aug 2026 &ndash; Present</span>
                         </div>
-
-                        <h2>Compiler &amp; Semantic Analyzer</h2>
-
-                        <p class="project-tech">
-                            C++ • Compiler Design • Recursive Descent Parsing
-                        </p>
-
-                        <p>
-                            Implemented the semantic-analysis component of a
-                            compiler for a custom programming language using
-                            C++.
-                        </p>
-
-                        <p>
-                            Built symbol-table management, static scope
-                            resolution, type checking, variable tracking, and
-                            compile-time diagnostics.
-                        </p>
-
+                        <h2>Honeywell Aerospace Cable Design Tool</h2>
+                        <p class="project-role">Capstone Project &middot; Five-person team</p>
+                        <ul>
+                            <li>Collaborating with a five-person team and Honeywell sponsor to develop a tool that automates aerospace cable design and component compatibility validation.</li>
+                            <li>Defining requirements and system workflows for managing cable components, modifying designs, and generating digital engineering drawings.</li>
+                        </ul>
                         <div class="tag-list">
-
-                            <span>C++</span>
-                            <span>Parsing</span>
-                            <span>Symbol Tables</span>
-                            <span>Type Systems</span>
-
+                            <span class="tag">Requirements Engineering</span>
+                            <span class="tag">System Workflows</span>
+                            <span class="tag">Team Collaboration</span>
+                            <span class="tag">Industry Sponsor</span>
                         </div>
-
                         <div class="project-links">
-
-                            <a
-                                href="https://github.com/VXF-Vinnie/compiler-semantic-analyzer"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="site-button primary-button"
-                            >
-                                <i class="bi bi-github"></i>
-                                View Repository
-                            </a>
-
+                            <span class="project-note"><i class="bi bi-lock"></i> Sponsor project &mdash; source code is not public</span>
                         </div>
+                    </article>
 
+                    <!-- Split (SplitCheck) -->
+                    <article class="project-card featured card-surface card-hover reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="bi bi-receipt"></i></div>
+                            <span class="project-date">Oct 2026 &ndash; Present</span>
+                        </div>
+                        <h2>Split &mdash; iOS Bill Splitter</h2>
+                        <p class="project-role">Swift &middot; SwiftUI &middot; Two-person team &middot; In development</p>
+                        <p>
+                            An iOS app that helps groups divide a restaurant bill quickly and accurately. Instead of one
+                            person totaling the check, Split assigns each item to the people who ordered it and calculates
+                            what everyone owes, including their proportional share of tax and tip.
+                        </p>
+                        <ul>
+                            <li>Building with SwiftUI and an MVVM architecture, with SwiftData for bill history and MapKit / Core Location for nearby restaurant lookup.</li>
+                            <li>Designed to support even or itemized splits, shared items, and 18%, 20%, 25%, or custom tips distributed proportionally.</li>
+                            <li>Team workflow uses feature branches, pull requests reviewed by the other teammate, and GitHub Issues with a project board.</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">Swift</span>
+                            <span class="tag">SwiftUI</span>
+                            <span class="tag">MVVM</span>
+                            <span class="tag">SwiftData</span>
+                            <span class="tag">MapKit</span>
+                            <span class="tag">Core Location</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VXF-Vinnie/SplitCheck" target="_blank" rel="noopener noreferrer"
+                                class="site-button primary-button"><i class="bi bi-github"></i> View Repository</a>
+                            <span class="project-note"><i class="bi bi-hourglass-split"></i> ASU CSE 335 &middot; Fall 2026</span>
+                        </div>
+                    </article>
+
+                    <!-- SCRUBIT -->
+                    <article class="project-card card-surface card-hover reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+                            <span class="project-date">SunHacks &middot; Oct 2026</span>
+                        </div>
+                        <h2>SCRUBIT</h2>
+                        <p class="project-role">Python &middot; Local AI &middot; Hackathon team project</p>
+                        <p>
+                            A privacy-first tool that audits a user's social media archive for content they may want to
+                            review before entering the professional world. The open-weight model runs locally through
+                            Ollama, so personal data never leaves the device.
+                        </p>
+                        <ul>
+                            <li>Developed the user interface and integrated the front end with the local Ollama API.</li>
+                            <li>Noticed the model struggled to tell apart High, Medium, and Low priority posts and posts to delete because the categories were too ambiguous, and edited the backend to address it.</li>
+                            <li>Tested with mock social media archives the team created, so no real user data was needed.</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">Ollama</span>
+                            <span class="tag">Local LLM</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VXF-Vinnie/SCRUBIT" target="_blank" rel="noopener noreferrer"
+                                class="site-button primary-button"><i class="bi bi-github"></i> View Repository</a>
+                        </div>
+                    </article>
+
+                    <!-- Compiler -->
+                    <article class="project-card card-surface card-hover reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="bi bi-cpu"></i></div>
+                            <span class="project-date">Jun &ndash; Jul 2026</span>
+                        </div>
+                        <h2>Compiler &amp; Semantic Analyzer</h2>
+                        <p class="project-role">C++</p>
+                        <ul>
+                            <li>Built a recursive-descent parser and semantic analyzer for a custom programming language.</li>
+                            <li>Implemented symbol tables, static scope resolution, type checking, and diagnostics for undeclared, unused, and uninitialized variables.</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">C++</span>
+                            <span class="tag">Parsing</span>
+                            <span class="tag">Symbol Tables</span>
+                            <span class="tag">Type Systems</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VXF-Vinnie/compiler-semantic-analyzer" target="_blank" rel="noopener noreferrer"
+                                class="site-button primary-button"><i class="bi bi-github"></i> View Repository</a>
+                        </div>
+                    </article>
+
+                    <!-- Academic Discussion System -->
+                    <article class="project-card card-surface card-hover reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="bi bi-chat-square-text"></i></div>
+                            <span class="project-date">Fall 2025</span>
+                        </div>
+                        <h2>Academic Discussion &amp; Evaluation System</h2>
+                        <p class="project-role">Java &middot; JavaFX &middot; H2 &middot; JUnit</p>
+                        <ul>
+                            <li>Built two MVC-based modules for discussion management, student activity tracking, grading, and private feedback.</li>
+                            <li>Implemented JDBC database operations, CRUD functionality, role-based authorization, and automated and manual testing.</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">JDBC</span>
+                            <span class="tag">JUnit</span>
+                        </div>
+                    </article>
+
+                    <!-- This website -->
+                    <article class="project-card card-surface card-hover reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="bi bi-window-sidebar"></i></div>
+                            <span class="project-date">Ongoing</span>
+                        </div>
+                        <h2>Personal Portfolio Website</h2>
+                        <p class="project-role">HTML &middot; CSS &middot; JavaScript &middot; Bootstrap</p>
+                        <ul>
+                            <li>Designed and developed this responsive portfolio site with a custom dark theme and accessible navigation.</li>
+                            <li>Deployed with GitHub Pages, using Git for version control and continuous updates.</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VXF-Vinnie/VXF-Vinnie.github.io" target="_blank" rel="noopener noreferrer"
+                                class="site-button secondary-button"><i class="bi bi-github"></i> View Source</a>
+                        </div>
                     </article>
 
                 </div>
@@ -170,41 +248,43 @@
             </div>
         </section>
 
+        <!-- Call to Action -->
+        <section class="page-section pt-0">
+            <div class="container">
+                <div class="cta-band card-surface reveal">
+                    <div>
+                        <h2>Let's build something together.</h2>
+                        <p>I'm looking for full-time software engineering roles starting after May 2027.</p>
+                    </div>
+                    <div class="button-group">
+                        <a href="contact.html" class="site-button primary-button">Get in Touch <i class="bi bi-arrow-right"></i></a>
+                        <a href="assets/Vincent_Farfan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="site-button secondary-button"><i class="bi bi-file-earmark-pdf"></i> Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
 
-            <p>
-                &copy; <span class="current-year"></span> Vincent Farfan
-            </p>
+            <p>&copy; <span class="current-year"></span> Vincent Farfan &middot; Built with HTML, CSS, Bootstrap, and JavaScript</p>
 
             <div class="footer-socials">
-
-                <a
-                    href="https://github.com/VXF-Vinnie"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Vincent Farfan on GitHub"
-                >
-                    <i class="bi bi-github"></i>
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/vincent-farfan-723b922ba"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Vincent Farfan on LinkedIn"
-                >
-                    <i class="bi bi-linkedin"></i>
-                </a>
-
+                <a href="mailto:vincentxf.business@gmail.com" aria-label="Email Vincent Farfan"><i class="bi bi-envelope"></i></a>
+                <a href="https://github.com/VXF-Vinnie" target="_blank" rel="noopener noreferrer" aria-label="Vincent Farfan on GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/vincent-farfan-723b922ba" target="_blank" rel="noopener noreferrer" aria-label="Vincent Farfan on LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
 
         </div>
     </footer>
 
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 
 </body>
