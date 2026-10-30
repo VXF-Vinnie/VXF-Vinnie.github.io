@@ -574,6 +574,141 @@ p {
     margin-top: 0.35rem;
 }
 
+.events-block {
+    margin-top: 2.25rem;
+}
+
+.events-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.events-heading h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.events-count {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 991px) {
+    .events-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.event-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem 1.2rem;
+    overflow: hidden;
+}
+
+.event-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity var(--ease);
+}
+
+.event-card:hover::before {
+    opacity: 1;
+}
+
+.event-flyer {
+    width: calc(100% + 2.4rem);
+    margin: -1.15rem -1.2rem 0;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
+
+.event-date {
+    width: 52px;
+    flex-shrink: 0;
+    padding: 0.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    border-radius: 10px;
+    line-height: 1;
+}
+
+.event-date span {
+    color: var(--accent);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.event-date strong {
+    margin-top: 0.25rem;
+    color: var(--text);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.event-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.event-type {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.event-card h4 {
+    margin: 0 0 0.4rem;
+    color: var(--text);
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.event-place {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.84rem;
+}
+
+.event-place i {
+    color: var(--text-muted);
+    margin-right: 0.2rem;
+}
+
 
 /* ========================================
    Interior Page Hero
