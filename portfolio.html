@@ -14,7 +14,10 @@
     <meta property="og:title" content="Projects | Vincent Farfan" />
     <meta property="og:description" content="Software projects by Vincent Farfan, including a Honeywell-sponsored capstone, an iOS bill-splitting app, a local-AI privacy tool, and a C++ compiler semantic analyzer." />
     <meta property="og:url" content="https://vxf-vinnie.github.io/portfolio.html" />
-    <meta property="og:image" content="https://vxf-vinnie.github.io/images/vincentpfp.PNG" />
+    <meta property="og:image" content="https://vxf-vinnie.github.io/images/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://vxf-vinnie.github.io/portfolio.html" />
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -22,7 +25,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- Bootstrap + icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -112,7 +115,20 @@
                     </article>
 
                     <!-- Split (SplitCheck) -->
-                    <article class="project-card featured card-surface card-hover reveal">
+                    <article class="project-card featured card-surface card-hover reveal" id="split">
+                        <div class="work-media project-media code-frame">
+                            <div class="code-bar" aria-hidden="true"><span>Bill.swift</span><span>SwiftData</span></div>
+<pre aria-label="Excerpt of the Bill model from the Split repository"><code><span class="tk-at">@Model</span>
+<span class="tk-kw">final class</span> <span class="tk-ty">Bill</span> {
+    <span class="tk-kw">var</span> tax: <span class="tk-ty">Decimal</span>
+    <span class="tk-kw">var</span> tipPercent: <span class="tk-ty">Decimal</span> <span class="tk-cm">// store both...</span>
+    <span class="tk-kw">var</span> tipAmount: <span class="tk-ty">Decimal</span>  <span class="tk-cm">// ...compute the other</span>
+    <span class="tk-at">@Relationship</span>(deleteRule: .cascade,
+                  inverse: \<span class="tk-ty">Item</span>.bill)
+    <span class="tk-kw">var</span> items: [<span class="tk-ty">Item</span>] = []
+}</code></pre>
+                        </div>
+
                         <div class="project-card-header">
                             <div class="project-icon"><i class="bi bi-receipt"></i></div>
                             <span class="project-date">Oct 2026 &ndash; Present</span>
@@ -145,7 +161,15 @@
                     </article>
 
                     <!-- SCRUBIT -->
-                    <article class="project-card card-surface card-hover reveal">
+                    <article class="project-card card-surface card-hover reveal" id="scrubit">
+                        <div class="work-media project-media browser-frame">
+                            <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span><em>localhost &middot; SCRUBIT</em></div>
+                            <picture>
+                                <source srcset="images/projects/scrubit.webp" type="image/webp" />
+                                <img src="images/projects/scrubit.jpg" alt="SCRUBIT upload screen: Find the posts you might regret later, with a social media archive upload card" width="1280" height="800" loading="lazy" />
+                            </picture>
+                        </div>
+
                         <div class="project-card-header">
                             <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
                             <span class="project-date">SunHacks &middot; Oct 2026</span>
@@ -175,7 +199,13 @@
                     </article>
 
                     <!-- Compiler -->
-                    <article class="project-card card-surface card-hover reveal">
+                    <article class="project-card card-surface card-hover reveal" id="compiler">
+                        <div class="work-media project-media diagram-frame">
+                            <a href="images/projects/compiler-architecture.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the full compiler architecture diagram">
+                                <img src="images/projects/compiler-architecture-crop.svg" alt="Compiler architecture: the recursive-descent parser feeds semantic analysis, which uses a symbol table, scope resolution, type checking, and variable tracking" width="1060" height="640" loading="lazy" />
+                            </a>
+                        </div>
+
                         <div class="project-card-header">
                             <div class="project-icon"><i class="bi bi-cpu"></i></div>
                             <span class="project-date">Jun &ndash; Jul 2026</span>
@@ -193,8 +223,7 @@
                             <span class="tag">Type Systems</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/VXF-Vinnie/compiler-semantic-analyzer" target="_blank" rel="noopener noreferrer"
-                                class="site-button primary-button"><i class="bi bi-github"></i> View Repository</a>
+                            <span class="project-note"><i class="bi bi-lock"></i> Course project &mdash; code available on request</span>
                         </div>
                     </article>
 
